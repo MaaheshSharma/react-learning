@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* A quieter, consistent visual system for the conference form. */
+.conference-ui {
+  background: #020617;
+}
+
+.conference-ui section {
+  border-color: #1e293b;
+  background: #0f172a;
+  box-shadow: none;
+}
+
+.conference-ui section:hover {
+  border-color: #334155;
+}
+
+.conference-ui input,
+.conference-ui select,
+.conference-ui textarea {
+  box-shadow: none;
+}
+
+.conference-ui input:focus,
+.conference-ui select:focus,
+.conference-ui textarea:focus {
+  box-shadow: 0 0 0 3px rgb(99 102 241 / 18%);
+}
+
+.conference-ui [class*="shadow-2xl"] {
+  box-shadow: none;
+}
+
+.conference-ui [class*="shadow-xl"] {
+  box-shadow: none;
+}
+
+.conference-ui .group:hover {
+  transform: none;
+}
+
+@media (max-width: 640px) {
+  .conference-ui {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
